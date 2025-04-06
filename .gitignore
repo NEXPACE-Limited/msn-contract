@@ -1,0 +1,20 @@
+# output files
+node_modules
+/artifacts
+/bin
+/cache
+/coverage
+/coverage.json
+/gasReporterOutput.json
+/typechain-types
+/.openzeppelin
+/abi-table
+/nx-errors
+
+# config files
+.env
+.idea
+.vscode
+
+# etc
+.DS_Store

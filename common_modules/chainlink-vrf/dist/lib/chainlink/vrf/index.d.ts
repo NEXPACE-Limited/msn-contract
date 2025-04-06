@@ -1,0 +1,26 @@
+import BN from "bn.js";
+import { BasePoint } from "../../crypto/ec";
+import ECVRF, { RawProof, RawVerification } from "../../crypto/ecvrf";
+import { hashOfKey, hashToCurve, outputHash } from "./contract-functions";
+import * as solidity from "./types";
+export { hashToCurve, outputHash, hashOfKey };
+export declare function scalarFromCurvePoints(g: BasePoint, h: BasePoint, gx: BasePoint, hx: BasePoint, gk: BasePoint, hk: BasePoint): BN;
+export declare const ecvrf: ECVRF<BN, string>;
+export declare function calcZInv(p: BasePoint, q: BasePoint): BN;
+export declare function prove(sk: BN, preSeed: bigint, blockhash: string): Promise<solidity.Proof>;
+export declare function proveDirect(sk: BN, seed: BN): Promise<solidity.Proof>;
+export declare function computeSeed(preSeed: bigint, blockhash: string): BN;
+export declare function convertProof(rawProof: RawProof, rawVerification: RawVerification, seed: bigint): {
+    pk: solidity.Point;
+    gamma: solidity.Point;
+    c: number[];
+    s: number[];
+    seed: bigint;
+    uWitness: string;
+    cGammaWitness: solidity.Point;
+    sHashWitness: solidity.Point;
+    zInv: number[];
+};
+export declare function verify(pk: BasePoint | null | undefined, preSeed: bigint | null | undefined, blockhash: string, proof: solidity.Proof): Promise<boolean>;
+export declare function verifyDirect(pk: BasePoint | null | undefined, seed: BN | null | undefined, proof: solidity.Proof): Promise<boolean>;
+export declare function outputHashFromProof(proof: solidity.Proof): Promise<string>;

@@ -1,0 +1,6 @@
+/artifacts
+/typechain-types
+
+# mistakenly created package-lock.json and node_modules should not be committed
+/package-lock.json
+# implicitly ignores /node_modules by root .gitignore
