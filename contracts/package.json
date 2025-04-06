@@ -16,8 +16,8 @@
     "@chainlink/contracts": "^0.8.0",
     "@openzeppelin/contracts": "=4.8.0",
     "@openzeppelin/contracts-upgradeable": "=4.9.2",
-    "@projecta/msu-contracts": "git+ssh://git@github.com:nexpace-admin/maple-contract.git",
-    "@projecta/util-contracts": "git+ssh://git@github.com:nexpace-admin/util-contracts.git",
-    "@projecta/nexpace-contracts": "git+ssh://git@github.com:nexpace-admin/nexpace-contracts.git"
+    "@projecta/msu-contracts": "git+ssh://git@github.com:nexpace-admin/maple-contract.git#v1.0.0",
+    "@projecta/util-contracts": "git+ssh://git@github.com:nexpace-admin/util-contracts.git#v1.0.0",
+    "@projecta/nexpace-contracts": "git+ssh://git@github.com:nexpace-admin/nexpace-contracts.git#v1.0.0"
   }
 }
