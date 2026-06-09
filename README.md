@@ -1,3 +1,9 @@
+> [!IMPORTANT]
+> **This repository is deprecated.**
+> The source has moved to the **[nxp-contracts](https://github.com/NEXPACE-Limited/nxp-contracts)** monorepo.
+> Please use that repository for the latest code, issues, and updates.
+> This repository is kept read-only for historical reference, including the commit(s) covered by past security audits.
+
 ## Environment
 
 - node 16.18.\*
